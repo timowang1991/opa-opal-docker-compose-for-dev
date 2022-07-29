@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  opa:
+    image: openpolicyagent/opa:latest
+    ports:
+      - 8181:8181
+    volumes:
+      - ./:/data
+    command:
+      - run
+      - --server
+      - -w
+      - /data
