@@ -4,7 +4,7 @@ services:
   opa:
     image: openpolicyagent/opa:latest
     environment:
-      - NODE_ENV=dev
+      - ENV=dev
     ports:
       - 8181:8181
     volumes:

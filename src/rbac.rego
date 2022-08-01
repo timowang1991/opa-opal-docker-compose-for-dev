@@ -31,7 +31,7 @@ users_all_envs := {
 	"stage": data.users.users_stage
 }
 
-users := users_all_envs[runtime.env.NODE_ENV]
+users := users_all_envs[runtime.env.ENV]
 
 # Allow admins to do anything
 allow {
