@@ -19,11 +19,19 @@
 
 package app.rbac
 
-import data.users.users
 import data.role_permissions.role_permissions
 
 # By default, deny requests
 default allow = false
+
+runtime := opa.runtime()
+
+users_all_envs := {
+	"dev": data.users.users_dev,
+	"stage": data.users.users_stage
+}
+
+users := users_all_envs[runtime.env.NODE_ENV]
 
 # Allow admins to do anything
 allow {

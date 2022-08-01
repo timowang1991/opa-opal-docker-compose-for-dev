@@ -1,6 +1,6 @@
 package users
 
-users := {
+users_dev := {
     "alice": {
         "roles": ["admin"],
         "location": {
@@ -16,7 +16,7 @@ users := {
         }
     },
     "eve": {
-        "roles": ["customer"],
+        "roles": ["admin"],
         "location": {
             "country": "US",
             "ip": "8.8.8.8"
