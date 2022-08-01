@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  opa-dev:
+    image: openpolicyagent/opa:latest
+    environment:
+      - ENV=dev
+    volumes:
+      - ./src:/src
+    command:
+      - test
+      - /src
+  opa-stage:
+    image: openpolicyagent/opa:latest
+    environment:
+      - ENV=stage
+    volumes:
+      - ./src:/src
+    command:
+      - test
+      - /src
