@@ -33,3 +33,8 @@ curl --location --request POST 'http://localhost:8181/v1/data/app/rbac/allow' \
     }
 }'
 ```
+
+# How to run unit test
+```
+docker-compose -f docker-compose.test.yaml up
+```
