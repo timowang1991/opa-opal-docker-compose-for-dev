@@ -9,4 +9,5 @@ services:
       - ./src:/src
     command:
       - test
+      - -v
       - /src
