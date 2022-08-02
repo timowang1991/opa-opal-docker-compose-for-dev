@@ -1,6 +1,6 @@
-package graphql.users
+package graphql.dev
 
-users_dev := {
+users := {
     "alice": {
         "roles": ["admin"],
     },

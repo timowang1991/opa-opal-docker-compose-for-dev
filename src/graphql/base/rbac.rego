@@ -22,16 +22,9 @@ package graphql.app.rbac
 import data.graphql.role_permissions.role_permissions
 
 # By default, deny requests
-default allow = false
+default allow := false
 
-runtime := opa.runtime()
-
-users_all_envs := {
-	"dev": data.graphql.users.users_dev,
-	"stage": data.graphql.users.users_stage
-}
-
-users := users_all_envs[runtime.env.ENV]
+users := data.graphql.users
 
 allow {
 	user_is_admin

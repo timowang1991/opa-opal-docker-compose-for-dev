@@ -1,6 +1,6 @@
-package graphql.users
+package graphql.stage
 
-users_stage := {
+users := {
     "alice": {
         "roles": ["admin"],
     },
