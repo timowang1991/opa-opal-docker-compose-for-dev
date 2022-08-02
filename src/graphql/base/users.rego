@@ -1,6 +1,6 @@
 package graphql
 
-env := input.env { input.env }
+env = input.env { input.env }
 else = opa.runtime().env.ENV
 
 users_all_envs := {
