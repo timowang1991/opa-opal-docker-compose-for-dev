@@ -19,7 +19,7 @@
 
 package graphql.app.rbac
 
-import data.graphql.role_permissions.role_permissions
+import data.graphql.role_permissions
 
 # By default, deny requests
 default allow = false

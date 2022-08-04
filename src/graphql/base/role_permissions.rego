@@ -1,4 +1,4 @@
-package graphql.role_permissions
+package graphql
 
 role_permissions := {
     "customer": ["dog", "cat", "adoptDog", "adoptCat"],
